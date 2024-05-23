@@ -6,6 +6,11 @@
 </head>
 <body>
     <h1>Liste des Clients</h1>
+    <form action="/fiche_nom/" method="post">
+        <label for="nom_client">Rechercher par nom :</label>
+        <input type="text" id="nom_client" name="nom_client" required>
+        <button type="submit">Rechercher</button>
+    </form>
     <table>
         <tr>
             <th>ID</th>
