@@ -79,7 +79,7 @@ def enregistrer_client():
 
 
 # Nouvelle route pour la recherche par nom de client
-@app.route('/fiche_nom/', methods=['GET', 'POST'])
+@app.route('/fiche_nom/<str:post_nom>', methods=['GET', 'POST'])
 def recherche_par_nom():
     if request.method == 'POST':
         nom_client = request.form['nom_client']
